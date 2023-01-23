@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>Registro</title>
+
 </head>
 <body>
+   <!-- codigo boostrap
     h1>Sistema de Login</h1>
     <form id="form-login">
       <label for="username">Usuário:</label>
@@ -18,6 +24,77 @@
       <button type="submit">Entrar</button>
     </form>
     <br />
+--> 
+    <!--codigo feito na unha-->
+    <div class="container">
+      <div class="form-image">
+         <img src="./public/imgs/undraw_shopping_re_hdd9.svg"></img>
+      </div>
+         <div class="form">
+            <form action="#">
+               <div class="form-header">
+                  <div class="title">
+                     <h1>Cadastre-se no sistema de Recados</h1>   
+                  </div>
+                  <div class="login-botton">
+                     <button> <a href="#">Entrar</a></button>
+                  </div>
+               </div>
+               <div class="input-group">
+                  <div class="input-box">
+                     <label for="Firstname">Primeiro Nome</label>
+                     <input id="Firstname" type="text" name="Firstname" placeholder="Digite seu Primeiro nome" required>
+                  </div>
+                  <div class="input-box">
+                    <label for="Lastname">Sobrenome</label>
+                    <input id="Lastname" type="text" name="Lastname" placeholder="Digite seu Sobrenome" required>
+                 </div>
+                 <div class="input-box">
+                  <label for="Email">Email</label>
+                  <input id="Email" type="email" name="Email" placeholder="Digite seu Email" required>
+                  </div>
+                  <div class="input-box">
+                    <label for="number">Celular</label>
+                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                 </div>
+                 <div class="input-box">
+                  <label for="password">Senha</label>
+                  <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="input-box">
+                  <label for="confirmpassword">Confirme sua Senha</label>
+                  <input id="confirmpassword" type="confirmpassword" name="confirmpassword" placeholder="Digite sua senha" required>
+                </div>
+               </div>
+               <div class="gender-inputs">
+                <div class="gender-title">
+                  <h6>Genero</h6>
+                </div>
+
+                <div class="gender-group">
+                  <div class="gender-input">
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Feminimo</label>
+               </div>
+
+               <div class="gender-input">
+                  <input type="radio" id="male" name="gender">
+                  <label for="male">Masculino</label>
+               </div>
+               <div class="gender-input">
+                  <input type="radio" id="others" name="gender">
+                  <label for="others">Outros</label>
+               </div>
+               <div class="gender-input">
+                  <input type="radio" id="none" name="gender">
+                  <label for="none">Prefiro nao dizer</label>
+               </div>
+               <div class="continue-botton">
+                  <button> <a href="#">Continuar</a></button>
+               </div>
+            </form>
+         </div>
+        </div>
     
 </body>
 </html>
