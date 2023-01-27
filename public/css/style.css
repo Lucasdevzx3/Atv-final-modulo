@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #0c0ce94e;
+    
 }
 .container{
     width: 80%;
@@ -28,8 +29,14 @@ body {
     background-color: #fde3a7d7;
     padding: 1rem;
 }
-.form-image img {
-    width: 31rem;
+.form-image2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a7d7;
+    padding: 1rem;
+    width: 30rem;
 }
 .form {
     width: 50%;
@@ -51,15 +58,19 @@ body {
     align-items: center;
 
 }
+.login-botton2 {
+    display: flex;
+    align-items: center;
+}
 .login-button button {
     border: none;
-    background-color: #6c63ff;
+    background-color: #91d80d;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
 .login-button button:hover {
-    background-color: #6c63fff1;
+    background-color: #927272f1;
 }
 .login-button button a {
     text-decoration: none;
