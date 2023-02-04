@@ -22,20 +22,19 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0 , 0 , 0.212);
 }
 .form-image2 {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    padding: 3rem;
     
 }
 .form-image {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fde3a7d7;
-    padding: 1rem;
+    padding: 2rem;
 }
 .form {
     width: 50%;
