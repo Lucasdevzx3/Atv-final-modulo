@@ -22,10 +22,13 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0 , 0 , 0.212);
 }
 .form-image2 {
-    width: 40%;
+    width: 70%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    padding: 3rem;
+    align-items: center;
+    padding: 1rem;
+    background: url(/public/imgs/wallpaper\ andando.png);
     
 }
 .form-image {
