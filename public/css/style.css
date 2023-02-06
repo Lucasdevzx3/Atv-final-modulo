@@ -38,6 +38,7 @@ body {
     align-items: center;
     background-color: #fde3a7d7;
     padding: 2rem;
+    background-image: url(/public/imgs/imagem\ office\ desk.png);
 }
 .form {
     width: 50%;
