@@ -28,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background: url(/public/imgs/wallpaper\ andando.png);
+    background: url(../imgs/andando.png);
     
 }
 .form-image {
@@ -38,7 +38,7 @@ body {
     align-items: center;
     background-color: #fde3a7d7;
     padding: 2rem;
-    background-image: url(/public/imgs/imagem\ office\ desk.png);
+    background-image: url(../imgs/escritorio.png);
 }
 .form {
     width: 50%;
