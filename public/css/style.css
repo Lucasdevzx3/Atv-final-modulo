@@ -21,6 +21,7 @@ body {
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0 , 0 , 0.212);
 }
+/* imagem pagina login */
 .form-image2 {
     width: 70%;
     display: flex;
@@ -31,6 +32,7 @@ body {
     background-position: center;
     
 }
+/* imagem registre-se */
 .form-image {
     width: 60%;
     display: flex;
@@ -40,6 +42,7 @@ body {
     padding: 2rem;
     background-image: url(../imgs/escritorio.png);
 }
+/* formulario */
 .form {
     width: 50%;
     display: flex;
@@ -55,30 +58,65 @@ body {
     display: flex;
     justify-content: space-between;
 }
+/* pagina de login  */
 .login-button {
     display: flex;
     align-items: center;
 
 }
-.login-botton2 {
-    display: flex;
-    align-items: center;
+/* buttons pagina login */
+.login-button2{
+    border: none;
+    background-color: #4468c5;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+
 }
+/* buttons registre-se */
+.register-button {
+    border: none;
+    background-color: #4468c5;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;   
+}
+/* buttons registre-se */
+.register-button:hover {
+    background-color: #06b5d5;
+}
+/* buttons registre-se */
+.register-button a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  /* buttons login */
+.login-button2:hover{
+    background-color: #06b5d5;
+}
+/* buttons pagina de login */
 .login-button button {
     border: none;
-    background-color: #91d80d;
+    background-color: #4468c5;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
+/* buttons pagina de login */
 .login-button button:hover {
-    background-color: #927272f1;
+    background-color: #06b5d5;
 }
+/* buttons pagina de login */
 .login-button button a {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
 }
+/* formulario register e input 119 a 186*/
 .form-header h1::after {
     content: '';
     display: block;
@@ -156,9 +194,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* formulario register e input 119 a 186 TERMINA AKI*/
 .continue-button button:hover {
-    background-color: #6b63fff1;
+    background-color: #06b5d5;
 }
 
 .continue-button button a {
@@ -167,7 +205,12 @@ body {
     font-weight: 500;
     color: #fff;
 }
-
+/* ----------- PAINEL RECADOS ---------- */
+.painel {
+    
+}
+/* /* ----------- PAINEL RECADOS ---------- */ 
+/* config semantica */
 @media screen and (max-width ) {
     .form-image {
         display: none;
@@ -179,7 +222,7 @@ body {
         width: 100%;
     }
 }
-
+/* config semantica */
 @media screen and (max-width ) {
     .container {
         width: 90%;
@@ -206,6 +249,7 @@ body {
         margin-top: 0.5rem;
     }
 }
+/* config semantica */
 .container2 {
     display: flex;
   }
