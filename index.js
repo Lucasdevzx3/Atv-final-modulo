@@ -1,20 +1,44 @@
-// Código JavaScript para verificar se o usuário e senha estão armazenados no localStorage
-      // e fazer o login
-      // Obtém os valores dos inputs de usuário e senha
-      // const username = document.querySelector("#username").value;
-      //const password = document.querySelector("#password").value;
+// seleciona o botão de Continuar
+const continueButton = document.querySelector('.continue-button button');
 
-      // Obtém os valores armazenados no localStorage
-      //const storedUsername = localStorage.getItem("username");
-      //const storedPassword = localStorage.getItem("password");
+// adiciona o evento de clique ao botão
+continueButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  
+  // seleciona os campos do formulário
+  const firstName = document.querySelector('#Firstname');
+  const lastName = document.querySelector('#Lastname');
+  const email = document.querySelector('#Email');
+  const password = document.querySelector('#password');
+  const confirmPassword = document.querySelector('#confirmpassword');
+  const gender = document.querySelector('input[name="gender"]:checked');
+  const phone = document.querySelector('#number');
+  
+  // valida se todos os campos foram preenchidos
+  if (firstName.value && lastName.value && email.value && password.value && confirmPassword.value && gender && phone.value) {
+    
+    // valida se as senhas são iguais
+    if (password.value !== confirmPassword.value) {
+      alert('As senhas devem ser iguais!');
+      return;
+    }
+    
+    // armazena as informações do usuário no localStorage
+    const user = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      email: email.value,
+      password: password.value,
+      gender: gender.value,
+      phone: phone.value
+    };
+    localStorage.setItem('user', JSON.stringify(user));
+    
+    // redireciona o usuário para a página de login
+    window.location.href = 'index.html';
+    
+  } else {
+    alert('Por favor, preencha todos os campos!');
+  }
+});
 
-      // Verifica se o usuário e senha digitados correspondem aos armazenados no localStorage
-      //if (username === storedUsername && password === storedPassword) {
-        // Login válido, redireciona para a página principal
-        //window.location.href = "";
-      //} else {
-        // Login inválido, exibe mensagem de erro
-       
-     
-      // Nota: é importante lembrar que o localStorage só armazena dados em formato string, então é importante
-      //  converter os valores para string antes de armazená-los e convertê-los de volta para o formato desejado quando for usá-los.

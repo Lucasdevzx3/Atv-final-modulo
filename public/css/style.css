@@ -206,10 +206,119 @@ body {
     color: #fff;
 }
 /* ----------- PAINEL RECADOS ---------- */
-.painel {
+section.painel {
+    max-width: 100vh;
+    height: 100vh;
     
 }
-/* /* ----------- PAINEL RECADOS ---------- */ 
+
+div.painel-dados {
+    height: 80px;
+    padding: 30px;
+}
+
+div.painel-recados {
+    padding: 30px;
+    display: block;
+    position: relative;
+    justify-content: center;
+}
+
+#titulo-pagina {
+    font: normal normal lighter 1.4em sans-serif;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+#form-painel {
+    display: flex;
+    justify-content:space-between; 
+}
+
+#input-numero-id {
+    width: 100px;   
+    border-radius: 5px;    
+}
+
+#input-desc {
+    width: 400px; 
+    border-radius: 5px;    
+}
+
+#input-det {
+    display: flex;
+    width: 800px;       
+    border-radius: 5px;    
+}
+
+#btn-salvar {
+    width: 100px;
+    height: 40px;
+    margin-top: 0;
+}
+
+#tabela-recados {
+    width: 95%;    
+    max-width: 100vw;  
+    position: absolute;
+    border-collapse: collapse;
+    text-indent: 10px;
+}
+
+#th-codigo{
+    width: 150px;
+}
+
+#th-descricao{
+    width:450px;
+}
+
+#th-detalhamento{
+    width: 600px;
+}
+
+.linha {
+    height: 35px; 
+    border-top: 0; 
+    border-bottom: 1px solid var(--cor1);
+    border-left: 0;
+    border-right: 0;
+    font-size: 0.9em;
+}
+
+.linha:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);    
+}
+
+input.btn-registros {
+    width: 80px;
+    height: 25px;  
+    border-radius: 10px;  
+}
+
+input.btn-registros:hover {
+    cursor: pointer;
+}
+
+#linha-inicial{
+    text-align: center;
+    color: var(--cor1);
+}
+
+th {    
+    height: 38px;
+    color: var(--cor0);
+    background-color: var(--cor3);
+    border-left: 0;
+    border-right: 0;  
+    text-align: left;  
+    font-size: 1.1em; 
+}
+
+/* ----------- PAINEL RECADOS ---------- */ 
 /* config semantica */
 @media screen and (max-width ) {
     .form-image {
