@@ -213,8 +213,10 @@ section.painel {
 }
 
 div.painel-dados {
-    height: 80px;
-    padding: 30px;
+    height: 100px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 div.painel-recados {
@@ -228,7 +230,7 @@ div.painel-recados {
     font: normal normal lighter 1.4em sans-serif;
     display: block;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -257,6 +259,31 @@ div.painel-recados {
     width: 100px;
     height: 40px;
     margin-top: 0;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-editar {
+    width: 55px;
+    height: 30px;
+    margin-top: 0;
+    background-color: #159874;
+    padding: 0.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    
+}
+.btn-apagar {
+    width: 55px;
+    height: 30px;
+    margin-top: 0;
+    background-color: #e3173b;
+    padding: 0.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
 }
 
 #tabela-recados {
@@ -265,10 +292,6 @@ div.painel-recados {
     position: absolute;
     border-collapse: collapse;
     text-indent: 10px;
-}
-
-#th-codigo{
-    width: 150px;
 }
 
 #th-descricao{
@@ -282,15 +305,10 @@ div.painel-recados {
 .linha {
     height: 35px; 
     border-top: 0; 
-    border-bottom: 1px solid var(--cor1);
+    border-bottom: 1px solid white;
     border-left: 0;
     border-right: 0;
     font-size: 0.9em;
-}
-
-.linha:hover{
-    background-color: var(--cor1);
-    color: var(--cor4);    
 }
 
 input.btn-registros {
@@ -305,13 +323,12 @@ input.btn-registros:hover {
 
 #linha-inicial{
     text-align: center;
-    color: var(--cor1);
 }
 
 th {    
     height: 38px;
-    color: var(--cor0);
-    background-color: var(--cor3);
+    color: black;
+    background-color: white;
     border-left: 0;
     border-right: 0;  
     text-align: left;  
