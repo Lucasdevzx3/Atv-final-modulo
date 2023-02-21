@@ -1,3 +1,29 @@
+// seleciona o botão de login
+const loginButton = document.querySelector('.login-button2');
+
+// adiciona o evento de clique ao botão
+loginButton.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  // seleciona os campos do formulário
+  const email = document.querySelector('#Email');
+  const password = document.querySelector('#password');
+
+  // obtém as informações do usuário armazenadas no localStorage
+  const storedUser = JSON.parse(localStorage.getItem('user'));
+
+  // valida se o usuário existe e as credenciais estão corretas
+  if (storedUser && storedUser.email === email.value && storedUser.password === password.value) {
+    // redireciona o usuário para a página de recados
+    window.location.href = 'recados.html';
+    
+    // exibe um alerta de sucesso
+    alert('Login realizado com sucesso!');
+    
+  } else {
+    alert('Credenciais inválidas. Por favor, tente novamente.');
+  }
+});
 // seleciona o botão de Continuar
 const continueButton = document.querySelector('.continue-button button');
 
